@@ -1,5 +1,5 @@
-import { Flex, Text, HStack, Icon, Box } from "@chakra-ui/react";
-import { CarruselTypes } from "../../Types/Types";
+import { Flex, Text, HStack, Icon } from "@chakra-ui/react";
+import { CarruselTypes } from "../../../Types/Types";
 import { motion } from "framer-motion";
 
 const HStackMotion = motion(HStack);

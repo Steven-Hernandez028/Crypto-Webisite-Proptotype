@@ -1,8 +1,7 @@
 import { Outlet, useLocation } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Box } from "@chakra-ui/react";
-import NavBar from "../NavBar/NavBar";
-import Footer from "../Footer/Footer";
+
 const BoxMotion = motion(Box);
 
 interface pageVariant {

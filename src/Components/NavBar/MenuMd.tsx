@@ -1,4 +1,4 @@
-import { HStack, Box, Text, Button, Link as ChakraLink } from "@chakra-ui/react";
+import { HStack, Box, Text, Link as ChakraLink } from "@chakra-ui/react";
 import { TitleItemData } from "../../Constants/Data";
 import { Link } from "react-router-dom";
 
