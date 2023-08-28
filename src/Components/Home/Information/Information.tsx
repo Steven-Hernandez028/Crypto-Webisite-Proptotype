@@ -1,11 +1,4 @@
-import {
-  Text,
-  Flex,
-  Box,
-  Link,
-  Icon,
-  HStack,
-} from "@chakra-ui/react";
+import { Text, Flex, Box, Link, Icon, HStack } from "@chakra-ui/react";
 
 import { MarginBottom, paddingX, width } from "../../../styles/styles";
 import image2 from "../../../assets/image3.png";
@@ -21,7 +14,7 @@ const Url = "";
 const Information = () => {
   return (
     <Flex
-    mb={MarginBottom}
+      mb={MarginBottom}
       paddingX={paddingX}
       bg="white"
       alignItems="center"
@@ -32,7 +25,7 @@ const Information = () => {
       <Flex
         alignItems="center"
         justifyContent="space-between"
-        h={{ base: "1000px", md: "720px",lg:"680px" }}
+        h={{ base: "1000px", md: "720px", lg: "680px" }}
         width={width}
         gap={5}
         flexDir={{ base: "column", md: "row" }}
@@ -44,7 +37,7 @@ const Information = () => {
           flexDir="column"
         >
           <HStack rounded="full" bg="color.primary" w="170px" p="14px">
-            <Icon as={BsBank} color="color.terciary" />{" "}
+            <Icon as={BsBank} color="color.terciary" />
             <Text fontFamily="title"> Institucional</Text>
           </HStack>
 
@@ -52,7 +45,7 @@ const Information = () => {
             textAlign="start"
             fontFamily="title"
             fontWeight="bold"
-            w={{ base: "auto", md: "700px" , lg:"600px" }}
+            w={{ base: "auto", md: "700px", lg: "600px" }}
             fontSize={{ base: "4xl", md: "5xl" }}
             color="black"
           >
@@ -105,10 +98,10 @@ const Information = () => {
           </Link>
         </Flex>
         <Box
-          height={{ base: "400px", md: "400px", lg: "500px"}}
+          height={{ base: "400px", md: "400px", lg: "500px" }}
           w={{ base: "100%", md: "60%" }}
           bgImage={image2}
-                alignSelf={{base: "auto", md: "end", lg:"auto"}}
+          alignSelf={{ base: "auto", md: "end", lg: "auto" }}
           bgPos="center"
           bgSize="cover"
         ></Box>

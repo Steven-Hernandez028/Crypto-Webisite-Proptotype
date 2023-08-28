@@ -37,9 +37,14 @@ const ParralaxTextChakra = ({
   const x = useTransform(baseX, (v) => `${wrap(-20, -45, v)}%`);
 
   const directionFactor = useRef<number>(1);
-  useAnimationFrame(( delta) => {
-    let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
 
+
+  useAnimationFrame(( _,delta) => {
+    let moveBy = directionFactor.current * baseVelocity * (delta / 1000);
+    if(_ === 3)
+    {
+      console.log('a');
+    }
     if (velocityFactor.get() < 0) {
       directionFactor.current = -1;
     } else if (velocityFactor.get() > 0) {
