@@ -5,6 +5,11 @@ import image2 from "../../../assets/image3.png";
 
 import { FiArrowUpRight } from "react-icons/fi";
 import { BsBank } from "react-icons/bs";
+import { motion } from "framer-motion";
+import { fadeIn } from "../../../styles/animations";
+
+const FlexMotion = motion(Flex);
+
 
 const Description =
   "Blockchain.com institutional Markets is a full-featured cryptocurrency services platform designed to connect with companies with their own crypto assets and institutional clients to lend, trade, and custodial activities tailored to your needs.";
@@ -13,7 +18,8 @@ const Url = "";
 
 const Information = () => {
   return (
-    <Flex
+    <FlexMotion
+    variants={fadeIn("", "spring", 1, 0.75)}
       mb={MarginBottom}
       paddingX={paddingX}
       bg="white"
@@ -106,7 +112,7 @@ const Information = () => {
           bgSize="cover"
         ></Box>
       </Flex>
-    </Flex>
+    </FlexMotion>
   );
 };
 export default Information;
