@@ -10,9 +10,9 @@ const WrapperComponent = (WrappedComponent: React.FC) => {
     return (
       <>
         <FlexMotion
-          // variants={staggerContainer()}
-          // initial="hidden"
-          // whileInView="show"
+          variants={staggerContainer()}
+          initial="hidden"
+          whileInView="show"
           bg="color.primary"
           paddingX={paddingX}
           justifyContent="center"
