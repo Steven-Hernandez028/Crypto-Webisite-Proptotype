@@ -6,9 +6,12 @@ const DescriptionFooter =
 
 const Footer = () => {
   return (
+    <>
+
     <Flex
     w="100%" 
     justifyContent="center"
+    pb="10px"
     >
 
 
@@ -77,11 +80,14 @@ const Footer = () => {
             <Text  w="100%" fontFamily="subtitle"  >Ventures</Text>
         </VStack>
       </Flex>
-    </Flex>
-
 
     </Flex>
 
+
+    </Flex>
+      
+      <Text textAlign="center"  fontFamily="subtitle" >Made With ♥ by Steven Hernandez </Text>
+</>
   );
 };
 
